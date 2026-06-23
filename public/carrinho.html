@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voidware - Carrinho</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="page">
+        <div class="logo_principal">
+            <img class="logo" src="imagens/logo.png" alt="Logo Voidware">
+            <a class="titulo" href="index.html">Voidware</a>
+        </div>
+
+        <nav class="menu">
+            <a href="index.html">Início</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="sobre.html">Sobre nós</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+
+        <a class="carrinho-link" href="carrinho.html">
+            Carrinho <span class="carrinho-contador" id="contador-carrinho">0</span>
+        </a>
+    </header>
+
+    <h1 style="padding: 0 2rem;">Seu carrinho</h1>
+
+    <section class="carrinho-itens" id="carrinho-itens">
+        <p>Carregando carrinho...</p>
+    </section>
+
+    <p class="carrinho-total" id="carrinho-total">Total: R$ 0,00</p>
+
+    <p style="text-align:right; padding: 0 2rem;">
+        <button id="btn-comprar" class="btn-comprar" onclick="finalizarCompra()">
+            Finalizar compra
+        </button>
+    </p>
+
+    <footer>
+        <p>Voidware &copy; 2026 - Projeto SciTec Jr</p>
+    </footer>
+
+    <script src="js/carrinho.js"></script>
+    <script src="js/carrinho-pagina.js"></script>
+</body>
+</html>

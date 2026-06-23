@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voidware - Contato</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="page">
+        <div class="logo_principal">
+            <img class="logo" src="imagens/logo.png" alt="Logo Voidware">
+            <a class="titulo" href="index.html">Voidware</a>
+        </div>
+
+        <nav class="menu">
+            <a href="index.html">Início</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="sobre.html">Sobre nós</a>
+            <a href="contato.html" class="ativo">Contato</a>
+        </nav>
+
+        <a class="carrinho-link" href="carrinho.html">
+            Carrinho <span class="carrinho-contador" id="contador-carrinho">0</span>
+        </a>
+    </header>
+
+    <section class="secao-texto">
+        <h1>Contato</h1>
+        <p>Tem alguma dúvida ou sugestão? Fale com a gente:</p>
+
+        <!-- Formulário ilustrativo: não envia para nenhum lugar de fato -->
+        <form onsubmit="event.preventDefault(); alert('Mensagem enviada!');">
+            <p>
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" required>
+            </p>
+
+            <p>
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email" required>
+            </p>
+
+            <p>
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+            </p>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <h2>Outras formas de contato</h2>
+        <p>E-mail: contato@voidware.exemplo</p>
+        <p>Telefone: (12) 0000-0000</p>
+    </section>
+
+    <footer>
+        <p>Voidware &copy; 2026 - Projeto SciTec Jr</p>
+    </footer>
+
+    <script src="js/carrinho.js"></script>
+</body>
+</html>

@@ -1,0 +1,269 @@
+/* 
+   este arquivo é só o suficiente pra estrutura funcionar ai o 
+   resto vcs podem fazer do jeito que quiserem, cores, fontes, etc.
+   qualquer coisa me avisa se precisar mudar algo.
+    */
+
+body {
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ---------- Header */
+.page {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    background-color: rgb(99, 149, 206);
+}
+
+.logo_principal {
+    justify-self: start;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 20%;
+}
+
+.titulo {
+    font-size: 30px;
+    color: rgb(250, 250, 250);
+}
+
+.menu {
+    display: flex;
+    justify-self: center;
+    gap: 5rem;
+}
+
+.menu a {
+    font-size: larger;
+    color: white;
+}
+
+.menu a.ativo {
+    text-decoration: underline;
+}
+
+.carrinho-link {
+    justify-self: end;
+    margin-right: 1rem;
+    color: white;
+    font-size: larger;
+    position: relative;
+}
+
+.carrinho-contador {
+    background: red;
+    color: white;
+    border-radius: 50%;
+    padding: 0 6px;
+    font-size: 12px;
+    margin-left: 4px;
+}
+
+/* Carrossel (home) */
+.carrossel {
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.track {
+    display: flex;
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cta {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 20px;
+    background: rgb(30, 112, 206);
+    color: white;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.cta:hover {
+    background: rgba(0, 0, 0, 0.85);
+}
+
+.bt {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.esquerda {
+    left: 10px;
+}
+
+.direita {
+    right: 10px;
+}
+
+/* Sobre a loja (home) */
+.sobre-loja {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+/* Grid de produtos */
+.lista-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.card-produto {
+    border: 1px solid rgb(60, 60, 60);
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card-produto img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Filtros (página de produtos) */
+.filtros {
+    display: flex;
+    gap: 2rem;
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+}
+
+.filtros fieldset {
+    border: 1px solid rgb(60, 60, 60);
+}
+
+/* Página de produto específico */
+.produto-detalhe {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+.produto-imagem img {
+    width: 100%;
+    max-width: 400px;
+}
+
+.cores-opcoes {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.cor-bolinha {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.cor-bolinha.selecionada {
+    outline: 3px solid yellow;
+}
+
+/* Filtro de matiz aplicado na mesma imagem para simular cores diferentes
+    ta mudando a matiz da imagem base, então cada cor é só uma classe CSS 
+    diferente que aplica um filtro diferente na mesma imagem
+*/
+
+.filtro-preto {
+    filter: none;
+}
+
+.filtro-branco {
+    filter: grayscale(1) brightness(1.8);
+}
+
+.filtro-azul {
+    filter: hue-rotate(180deg) saturate(2);
+}
+
+/* Carrinho */
+.carrinho-itens {
+    padding: 2rem;
+}
+
+.linha-carrinho {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 1px solid rgb(60, 60, 60);
+    padding: 1rem 0;
+}
+
+.linha-carrinho img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.carrinho-total {
+    padding: 1rem 2rem;
+    text-align: right;
+    font-size: 1.2rem;
+}
+
+.btn-comprar:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Footer / contato / sobre */
+.secao-texto {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+footer {
+    padding: 1rem 2rem;
+    text-align: center;
+    border-top: 1px solid rgb(60, 60, 60);
+}
