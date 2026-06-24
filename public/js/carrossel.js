@@ -39,7 +39,7 @@ async function carregarDestaques() {
             slide.onclick = () => irParaProduto(produto.id);
 
             slide.innerHTML = `
-                <img src="${produto.imagem}" alt="${produto.nome}">
+                <img src="${produto.imagemDestaque}" alt="${produto.nome}">
                 <span class="cta">Confira: ${produto.nome}</span>
             `;
 

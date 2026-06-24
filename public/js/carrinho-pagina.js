@@ -33,12 +33,12 @@ function renderizarCarrinho() {
                 <p>R$ ${item.preco.toFixed(2)} cada</p>
             </div>
             <div>
-                <button onclick="mudarQuantidadeNaTela(${item.id}, '${item.cor}', -1)">-</button>
+                <button class="botaos" onclick="mudarQuantidadeNaTela(${item.id}, '${item.cor}', -1)">-</button>
                 <span>${item.quantidade}</span>
-                <button onclick="mudarQuantidadeNaTela(${item.id}, '${item.cor}', 1)">+</button>
+                <button class="botaos" onclick="mudarQuantidadeNaTela(${item.id}, '${item.cor}', 1)">+</button>
             </div>
             <p>Subtotal: R$ ${(item.preco * item.quantidade).toFixed(2)}</p>
-            <button onclick="removerItemDaTela(${item.id}, '${item.cor}')">Remover</button>
+            <button class="botaos" onclick="removerItemDaTela(${item.id}, '${item.cor}')">Remover</button>
         `;
 
         container.appendChild(linha);

@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Voidware - Produto</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -49,12 +52,12 @@
 
                 <div>
                     <p>Quantidade:</p>
-                    <button onclick="alterarQuantidadeSelecionada(-1)">-</button>
+                    <button class="botaos" onclick="alterarQuantidadeSelecionada(-1)">-</button>
                     <input id="quantidade-selecionada" type="number" value="1" min="1" style="width: 3rem; text-align: center;">
-                    <button onclick="alterarQuantidadeSelecionada(1)">+</button>
+                    <button class="botaos" onclick="alterarQuantidadeSelecionada(1)">+</button>
                 </div>
 
-                <button onclick="adicionarProdutoAoCarrinho()">Adicionar ao carrinho</button>
+                <button class="botao" onclick="adicionarProdutoAoCarrinho()">Adicionar ao carrinho</button>
 
                 <p id="aviso-adicionado" style="display:none; color: lightgreen;"></p>
             </div>
