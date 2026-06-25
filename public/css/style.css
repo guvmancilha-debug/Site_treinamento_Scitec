@@ -3,6 +3,7 @@
    resto vcs podem fazer do jeito que quiserem, cores, fontes, etc.
    qualquer coisa me avisa se precisar mudar algo.
     */
+@import url('https://fonts.googleapis.com/css2?family=Artifika&display=swap');
 
 body {
     margin: 0;
@@ -353,4 +354,106 @@ footer {
 
 .sobre {
     margin-top: 5rem;
+}
+
+
+
+/*========================================
+Elementos para estilizar na hora da compra
+========================================*/
+
+/*Conteiner maior contendo os produtos*/
+.vendendo
+{
+    background-color: rgb(16, 16, 20);
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    margin: 200px 10% 200px 5%;
+
+    padding: 2%;
+    row-gap: 50px;
+    border-style: none;
+    border-radius: 20px;
+}
+
+/*Classes que ficarão dentro do conteiner e que poderão ser usadas para filtragem*/
+.computador img, .teclado img, .monitor img, .fone img, .cadeira img, .notebook img
+{
+    display: inline-flex;
+    background-color: rgb(50, 50, 53);
+    align-self: center;
+
+    max-width: 100%;
+    width: auto;
+    max-height: 150px;
+
+    border: none;
+    border-radius: 5px;
+}
+
+ .computador img
+{
+    padding: 20px 30px;
+}
+
+ .teclado img
+{
+    padding: 40px 8px 25px 8px;
+}
+
+.monitor img
+{
+    padding: 10px 18px;
+}
+
+.fone img
+{
+    padding: 20px 40px;
+}
+
+.cadeira img
+{
+    padding: 20px 60px;
+}
+
+.notebook img
+{
+    padding: 25px 10px 15px 10px;
+}
+
+.computador, .teclado, .monitor, .fone, .cadeira, .notebook
+{
+    width: 200px;
+    height: 275px;
+    padding: 20px 25px 15px 25px;
+    display:flex;
+    flex-wrap: wrap;
+
+    border-style: none;
+    border-radius: 10px;
+    justify-content: center;
+
+    background-color: rgb(32, 32, 36);
+}
+
+/*Texto que será usado para descrever os itens na venda*/
+.vendendo p
+{
+    background-color: rgb(32, 32, 36);
+    color: rgb(250, 247, 251);
+    align-self: last baseline;
+
+    font-family: "Artifika", serif;
+    font-weight: 400;
+    font-style: normal;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
 }
