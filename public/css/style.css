@@ -152,6 +152,7 @@ a {
 
 /* Sobre a loja (home) */
 .sobre-loja {
+    margin-top: 80px;
     padding: 3rem 2rem;
     text-align: center;
 }
