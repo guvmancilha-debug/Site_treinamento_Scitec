@@ -1,5 +1,3 @@
-### Puro Cluade isso aqui guys
-
 # Voidware - E-commerce ilustrativo
 
 Projeto de e-commerce **sem compra real, sem login**, feito para fins de
